@@ -1,9 +1,14 @@
 package main
 
-import "fmt"
-import "aoc-2021-go/days"
+import (
+	"aoc-2021-go/days"
+	"aoc-2021-go/utils"
+	"fmt"
+)
 
 func main() {
-	message := days.First_part("inputs/day1.txt")
-	fmt.Println(message)
+	fmt.Println("=^..^=    =^..^=  Day 1  =^..^=  =^..^=")
+	depths := utils.ExtractIntegersFromFile("inputs/day1.txt")
+	message := days.FirstPart(depths)
+	fmt.Println("Number of increases : ", message)
 }
