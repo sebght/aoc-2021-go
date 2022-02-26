@@ -32,3 +32,24 @@ func TestFirstPartRealData(t *testing.T) {
 		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 1228)
 	}
 }
+
+func TestSecondPartTwoWindowsOneIncrease(t *testing.T) {
+	result := SecondPart([]int{199, 200, 208, 210})
+	if result != 1 {
+		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 1)
+	}
+}
+
+func TestSecondPartTwoWindowsOneDecrease(t *testing.T) {
+	result := SecondPart([]int{208, 210, 200, 207})
+	if result != 0 {
+		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 0)
+	}
+}
+
+func TestSecondPartOfficialExample(t *testing.T) {
+	result := SecondPart([]int{199, 200, 208, 210, 200, 207, 240, 269, 260, 263})
+	if result != 5 {
+		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 5)
+	}
+}
