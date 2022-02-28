@@ -27,7 +27,7 @@ func TestFirstPartDay1MultipleIncreases(t *testing.T) {
 }
 
 func TestFirstPartDay1RealData(t *testing.T) {
-	result := FirstPartDay1(utils.ExtractIntegersFromFile("../inputs/day1.txt"))
+	result := FirstPartDay1(utils.ReadDay1("../inputs/day1.txt"))
 	if result != 1228 {
 		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 1228)
 	}
