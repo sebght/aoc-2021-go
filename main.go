@@ -14,5 +14,6 @@ func main() {
 	fmt.Print("\n")
 	fmt.Println("=^..^=    =^..^=   Day 2   =^..^=    =^..^=")
 	lines := utils.ExtractDay2("inputs/day2.txt")
-	fmt.Println("Horizontal * Depth :", days.FirstPartDay2(lines))
+	fmt.Println("Horizontal * Depth (1) :", days.FirstPartDay2(lines))
+	fmt.Println("Horizontal * Depth (2) :", days.SecondPartDay2(lines))
 }

@@ -38,3 +38,10 @@ func TestFirstPartDay2OfficalExample(t *testing.T) {
 		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 150)
 	}
 }
+
+func TestSecondPartDay2OfficalExample(t *testing.T) {
+	result := SecondPartDay2([]string{"forward 5", "down 5", "forward 8", "up 3", "down 8", "forward 2"})
+	if result != 900 {
+		t.Errorf("Result was incorrect, got: %d, want: %d.", result, 900)
+	}
+}
