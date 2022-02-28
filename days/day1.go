@@ -1,6 +1,6 @@
 package days
 
-func FirstPart(depths []int) int {
+func FirstPartDay1(depths []int) int {
 	count := 0
 	for i := 1; i < len(depths); i++ {
 		if depths[i-1] < depths[i] {
@@ -10,7 +10,7 @@ func FirstPart(depths []int) int {
 	return count
 }
 
-func SecondPart(depths []int) int {
+func SecondPartDay1(depths []int) int {
 	count := 0
 	for i := 0; i < len(depths)-3; i++ {
 		firstWindow := depths[i] + depths[i+1] + depths[i+2]
